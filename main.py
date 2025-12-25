@@ -12,8 +12,8 @@ st.set_page_config(
 # Load Data
 @st.cache_data
 def load_data():
-    main_df = pd.read_excel('D:\Dicky\Visdat Kompetisi\Level_1.xlsx')
-    lookup_df = pd.read_excel('D:\Dicky\Visdat Kompetisi\lookups.xlsx')
+    main_df = pd.read_excel('Level_1.xlsx')
+    lookup_df = pd.read_excel('lookups.xlsx')
     return main_df, lookup_df
 
 df, lookup = load_data()
@@ -187,5 +187,6 @@ By integrating spatial context, the results show that **active mobility policies
 can deliver **local, tangible benefits**—cleaner air, quieter streets,  
 and healthier communities.
 """)
+
 
 st.divider()
