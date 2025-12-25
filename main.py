@@ -46,8 +46,8 @@ st.markdown("""
 This interactive map illustrates how physical activity levels across different areas. Each point represents a local area, where larger and darker markers indicate higher levels of walking and cycling.
 """)
 
-with open("local-authority-district.geojson") as f:
-    geojson = json.load(f)
+with open("local-authority-district.json") as f:
+    json = json.load(f)
 
 map_fig = px.choropleth_mapbox(
     df,
@@ -190,3 +190,4 @@ and healthier communities.
 
 
 st.divider()
+
