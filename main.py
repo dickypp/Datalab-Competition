@@ -51,7 +51,7 @@ with open("local-authority-district.json") as f:
 
 map_fig = px.choropleth_mapbox(
     df,
-    geojson=geojson,
+    json=json,
     locations="area_name",
     featureidkey="properties.name",
     color="sum",                     
@@ -190,4 +190,5 @@ and healthier communities.
 
 
 st.divider()
+
 
